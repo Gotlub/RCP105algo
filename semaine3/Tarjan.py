@@ -46,7 +46,6 @@ class Graph:
             
             # If v is not visited yet, then recur for it
             if disc[v] == -1:
-                print("coucou", v) 
                 self.SCCUtil(v, low, disc, stackMember, st)
  
                 # Check if the subtree rooted with v has a connection to
